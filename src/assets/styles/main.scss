@@ -1,5 +1,6 @@
 @use 'normalize.css';
-@use './tailwind.scss';
+
+@use './variables.scss' as *;
 
 @use './ui/index.scss' as ui;
 @use './layout/index.scss' as layout;
@@ -37,8 +38,8 @@ ul {
   line-height: 1.5;
   font-weight: 400;
 
-  color: #fff;
-  background-color: #050505;
+  color: $color-neutral-white;
+  background-color: $color-neutral-900;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

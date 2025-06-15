@@ -1,102 +1,115 @@
 <section class="layout-chart-panel">
-  <div class="layout-chart-panel__tabs layout-chart-panel-tabs" role="tablist">
-    <div class="layout-chart-panel-tabs__item layout-chart-panel-tabs__item--is-active">
+  <div class="layout-chart-panel__tabs" role="tablist">
+    <div class="layout-chart-panel__item layout-chart-panel__item--is-active">
       <button
-        class="layout-chart-panel-tabs__action layout-chart-panel-tabs__action--is-active"
+        class="layout-chart-panel__action layout-chart-panel__action--is-active"
         role="tab"
         aria-selected="true"
         aria-controls="chart-panel"
+        aria-label="Chart Panel Tab"
       >
         Chart
       </button>
     </div>
 
-    <div class="layout-chart-panel-tabs__item">
+    <div class="layout-chart-panel__item">
       <button
-        class="layout-chart-panel-tabs__action"
+        class="layout-chart-panel__action"
         role="tab"
         aria-selected="false"
         aria-controls="options-panel"
+        aria-label="Options Panel Tab"
       >
         Options
       </button>
     </div>
 
-    <div class="layout-chart-panel-tabs__item">
+    <div class="layout-chart-panel__item">
       <button
-        class="layout-chart-panel-tabs__action"
+        class="layout-chart-panel__action"
         role="tab"
         aria-selected="false"
         aria-controls="news-panel"
+        aria-label="News Panel Tab"
       >
         News
       </button>
     </div>
 
-    <div class="layout-chart-panel-tabs__item">
+    <div class="layout-chart-panel__item">
       <button
-        class="layout-chart-panel-tabs__action"
+        class="layout-chart-panel__action"
         role="tab"
         aria-selected="false"
         aria-controls="financials-panel"
+        aria-label="Financials Panel Tab"
       >
         Financials
       </button>
     </div>
 
-    <div class="layout-chart-panel-tabs__item">
+    <div class="layout-chart-panel__item">
       <button
-        class="layout-chart-panel-tabs__action"
+        class="layout-chart-panel__action"
         role="tab"
         aria-selected="false"
         aria-controls="analysts-panel"
+        aria-label="Analysts Panel Tab"
       >
         Analysts
       </button>
     </div>
 
-    <div class="layout-chart-panel-tabs__item">
+    <div class="layout-chart-panel__item">
       <button
-        class="layout-chart-panel-tabs__action"
+        class="layout-chart-panel__action"
         role="tab"
         aria-selected="false"
         aria-controls="risk-panel"
+        aria-label="Risk Analysis Panel Tab"
       >
         Risk Analysis
       </button>
     </div>
 
-    <div class="layout-chart-panel-tabs__item">
+    <div class="layout-chart-panel__item">
       <button
-        class="layout-chart-panel-tabs__action"
+        class="layout-chart-panel__action"
         role="tab"
         aria-selected="false"
         aria-controls="releases-panel"
+        aria-label="Releases Panel Tab"
       >
         Releases
       </button>
     </div>
 
-    <div class="layout-chart-panel-tabs__item">
+    <div class="layout-chart-panel__item">
       <button
-        class="layout-chart-panel-tabs__action"
+        class="layout-chart-panel__action"
         role="tab"
         aria-selected="false"
         aria-controls="notes-panel"
+        aria-label="Notes Panel Tab"
       >
         Notes
       </button>
     </div>
 
-    <div class="layout-chart-panel-tabs__item">
+    <div class="layout-chart-panel__item">
       <button
-        class="layout-chart-panel-tabs__action"
+        class="layout-chart-panel__action"
         role="tab"
         aria-selected="false"
         aria-controls="profile-panel"
+        aria-label="Profile Panel Tab"
       >
         Profile
       </button>
     </div>
   </div>
+
+  <div id="chart-info-preview"></div>
+
+  <div id="candle-chart"></div>
 </section>

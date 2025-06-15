@@ -1,3 +1,5 @@
+@use '../variables.scss' as *;
+
 .shared-summary-info {
   display: flex;
   flex-direction: column;
@@ -14,12 +16,12 @@
   &__caption {
     font-size: 14px;
     line-height: 18px;
-    color: #999999;
+    color: $color-neutral-400;
   }
 
   &__value {
     font-size: 14px;
     line-height: 18px;
-    color: #fff;
+    color: $color-neutral-white;
   }
 }

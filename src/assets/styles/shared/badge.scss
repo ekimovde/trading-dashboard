@@ -1,10 +1,12 @@
+@use '../variables.scss' as *;
+
 .shared-badge {
   font-size: 12px;
   line-height: 1;
   padding-right: 6px;
   padding-left: 6px;
   background-color: transparent;
-  border: 1px solid #00bddd;
-  color: #00bddd;
+  border: 1px solid $color-brand-blue;
+  color: $color-brand-blue;
   border-radius: 50px;
 }

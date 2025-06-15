@@ -1,3 +1,5 @@
+@use '../variables.scss' as *;
+
 .shared-tabs {
   display: flex;
   align-items: center;
@@ -8,8 +10,8 @@
     background-color: transparent;
     border: none;
     flex-grow: 1;
-    color: #999999;
-    border-bottom: 1px solid #999999;
+    color: $color-neutral-400;
+    border-bottom: 1px solid $color-neutral-400;
     cursor: pointer;
     transition: 0.35s opacity;
 
@@ -18,10 +20,15 @@
     }
 
     &--is-active {
-      color: #0fedbe;
+      color: $color-green;
       border-bottom-width: 2px;
-      border-bottom-color: #0fedbe;
-      background-image: linear-gradient(to bottom, #0a0a0a, #09876c 95%, #0fedbe 70%);
+      border-bottom-color: $color-green;
+      background-image: linear-gradient(
+        to bottom,
+        $color-neutral-800,
+        $color-accent-600 95%,
+        $color-green 70%
+      );
     }
   }
 }

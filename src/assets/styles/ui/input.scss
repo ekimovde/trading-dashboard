@@ -1,7 +1,9 @@
+@use '../variables.scss' as *;
+
 .ui-input {
   display: flex;
   align-items: center;
-  background-color: #191919;
+  background-color: $color-neutral-700;
   border-radius: 6px;
   padding: 8px 12px;
   column-gap: 12px;
@@ -9,7 +11,7 @@
   &__icon {
     width: 16px;
     height: 16px;
-    color: #fff;
+    color: $color-neutral-white;
   }
 
   &__field {
@@ -17,12 +19,12 @@
     background-color: transparent;
     border: none;
     outline: none;
-    color: #fff;
+    color: $color-neutral-white;
     font-size: 14px;
     line-height: 18px;
 
     &::placeholder {
-      color: #999999;
+      color: $color-neutral-400;
     }
   }
 }

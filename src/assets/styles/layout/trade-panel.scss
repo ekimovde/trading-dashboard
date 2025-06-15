@@ -1,3 +1,5 @@
+@use '../variables.scss' as *;
+
 .layout-trade-panel {
   display: flex;
   flex-direction: column;
@@ -20,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1f1f1f;
+    background-color: $color-neutral-600;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     padding: 16px 24px;
@@ -30,7 +32,7 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-    color: #fff;
+    color: $color-neutral-white;
   }
 
   &__action {
@@ -75,7 +77,7 @@
     font-size: 14px;
     line-height: 18px;
     font-weight: 500;
-    color: #999999;
+    color: $color-neutral-400;
   }
 
   &__field {
@@ -94,11 +96,11 @@
     }
 
     &-caption {
-      color: #999999;
+      color: $color-neutral-400;
     }
 
     &-value {
-      color: #f63c6b;
+      color: $color-red;
     }
   }
 
@@ -133,7 +135,7 @@
   &__caption {
     font-size: 14px;
     line-height: 18px;
-    color: #fff;
+    color: $color-neutral-white;
   }
 
   &__divider {
@@ -141,8 +143,8 @@
     height: 1px;
     background: repeating-linear-gradient(
       to right,
-      #1f1f1f 0,
-      #1f1f1f 9px,
+      $color-neutral-600 0,
+      $color-neutral-600 9px,
       transparent 8px,
       transparent 16px
     );

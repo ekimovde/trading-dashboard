@@ -1,0 +1,152 @@
+@use '../variables.scss' as *;
+
+.shared-chart-info-preview {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 40px;
+  padding: 12px 24px;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__caption,
+  &__value {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__caption {
+    color: $color-neutral-400;
+  }
+
+  &__value {
+    color: $color-neutral-white;
+
+    &--status-danger {
+      color: $color-red;
+    }
+
+    &--status-success {
+      color: $color-green;
+    }
+  }
+}
+
+.shared-chart-info-preview-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 12px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+  }
+
+  &__action {
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid $color-neutral-white;
+    cursor: pointer;
+    outline: none;
+    transition: 0.35s opacity;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.shared-chart-info-preview-info-amount {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  color: $color-green;
+
+  &__value {
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 600;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 4px;
+  }
+
+  &__caption {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.shared-chart-info-preview-info-subinfo {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+
+  &__caption {
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-neutral-400;
+
+    &--type-danger {
+      color: $color-red;
+    }
+
+    &--type-default {
+      color: $color-neutral-white;
+    }
+  }
+}

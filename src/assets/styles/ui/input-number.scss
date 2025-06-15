@@ -1,17 +1,19 @@
+@use '../variables.scss' as *;
+
 .ui-input-number {
   position: relative;
   display: inline-block;
   width: inherit;
-  background-color: #191919;
+  background-color: $color-neutral-700;
   border-radius: 6px;
-  border-top: 1px solid #00bcd4;
+  border-top: 1px solid $color-accent-800;
   box-sizing: border-box;
 
   &__input {
     background-color: transparent;
     border-radius: 6px;
     border: none;
-    color: #fff;
+    color: $color-neutral-white;
     padding: 11px 12px;
     width: 100%;
     outline: none;

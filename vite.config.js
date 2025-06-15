@@ -12,7 +12,7 @@ export default defineConfig({
         },
       },
     }),
-    fullReload(['src/**/*.html', 'src/**/*.scss']),
+    fullReload(['src/**/*.scss']),
   ],
   css: {
     devSourcemap: true,
@@ -25,8 +25,9 @@ export default defineConfig({
       usePolling: true,
     },
   },
-  assetsInclude: ['**/*.html', '**/*.svg'],
+  assetsInclude: ['**/*.svg'],
   build: {
+    outDir: 'dist',
     watch: {
       include: 'src/**/*.{html,js,scss}',
     },

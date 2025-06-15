@@ -1,3 +1,5 @@
+@use '../variables.scss' as *;
+
 .ui-switch {
   $self: &;
 
@@ -16,7 +18,7 @@
     position: relative;
     width: 36px;
     height: 20px;
-    background-color: #00bddd;
+    background-color: $color-brand-blue;
     border-radius: 50px;
     flex-shrink: 0;
 
@@ -30,7 +32,7 @@
       position: absolute;
       width: 12px;
       height: 12px;
-      background-color: #000;
+      background-color: $color-dark;
       border-radius: 50%;
       top: 4px;
       right: 4px;
@@ -39,13 +41,13 @@
       // TODO: Example checking styles for switch
       // #{$self}__input:checked & {
       //     transform: translateX(30px);
-      //     background-color: #000;
+      //     background-color: $color-dark;
       // }
     }
   }
 
   &__caption {
-    color: #fff;
+    color: $color-neutral-white;
     font-size: 14px;
     line-height: 18px;
     font-weight: 500;

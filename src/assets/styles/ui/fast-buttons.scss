@@ -1,3 +1,5 @@
+@use '../variables.scss' as *;
+
 .ui-fast-buttons {
   display: flex;
   align-items: center;
@@ -11,7 +13,7 @@
   }
 
   &__action {
-    background-color: #1f1f1f;
+    background-color: $color-neutral-600;
     border: none;
     border-radius: 50px;
     padding: 8px;
@@ -22,7 +24,7 @@
   &__caption {
     font-size: 14px;
     line-height: 1;
-    color: #fff;
+    color: $color-neutral-white;
   }
 
   &__edit-action {

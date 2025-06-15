@@ -1,16 +1,18 @@
+@use '../variables.scss' as *;
+
 .ui-input-currency {
   position: relative;
   display: inline-block;
   width: inherit;
-  background-color: #191919;
+  background-color: $color-neutral-700;
   border-radius: 6px;
-  border-top: 1px solid #00bcd4;
+  border-top: 1px solid $color-accent-800;
   box-sizing: border-box;
   display: flex;
   align-items: center;
 
   &__prefix {
-    color: #fff;
+    color: $color-neutral-white;
     font-size: 16px;
     padding-left: 12px;
   }
@@ -19,7 +21,7 @@
     background-color: transparent;
     border-radius: 6px;
     border: none;
-    color: #fff;
+    color: $color-neutral-white;
     padding: 11px 12px;
     width: 100%;
     outline: none;

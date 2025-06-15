@@ -1,3 +1,5 @@
+@use '../variables.scss' as *;
+
 .layout-sidebar {
   display: flex;
   align-items: center;
@@ -5,8 +7,8 @@
   justify-content: space-between;
   padding: 16px 8px;
   height: 100vh;
-  background-color: #050505;
-  border-right: 1px solid #1f1f1f;
+  background-color: $color-neutral-900;
+  border-right: 1px solid $color-neutral-600;
 
   &__logo {
     width: 32px;
@@ -37,7 +39,7 @@
     height: 48px;
     border-radius: 50%;
     background-color: transparent;
-    color: #888;
+    color: $color-secondary-700;
     cursor: pointer;
     transition:
       background-color 0.2s,
@@ -45,14 +47,14 @@
       border-color 0.2s;
 
     &:hover:not(&--is-active) {
-      background-color: #333;
-      color: #fff;
+      background-color: $color-secondary-800;
+      color: $color-neutral-white;
     }
 
     &--is-active {
-      border: 2px solid #00c7ff;
-      color: #00c7ff;
-      background-color: #0d2838;
+      border: 2px solid $color-accent-900;
+      color: $color-accent-900;
+      background-color: $color-secondary-900;
     }
   }
 

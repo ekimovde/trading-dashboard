@@ -1,6 +1,8 @@
 import { updateLayout } from './components.js';
 import { updateHeaderLayout } from './header.js';
 import { updateTradePanelLayout } from './tradePanel.js';
+import { updateChartPanelLayout } from './chartPanel.js';
+import { createChart } from './chart.js';
 
 // Инициализация
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const timerId = setTimeout(() => {
     updateHeaderLayout();
     updateTradePanelLayout();
+    updateChartPanelLayout();
+    createChart();
 
     clearTimeout(timerId);
   }, 100);
@@ -17,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // Отслеживание изменений
 if (import.meta.hot) {
   import.meta.hot.accept(mod => {
-    console.log('HMR update');
     updateLayout();
   });
 }
