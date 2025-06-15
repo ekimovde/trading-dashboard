@@ -1,0 +1,43 @@
+.ui-fast-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+
+  &__actions {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 62px));
+    column-gap: 10px;
+  }
+
+  &__action {
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 50px;
+    padding: 8px;
+    cursor: pointer;
+    min-height: 34px;
+  }
+
+  &__caption {
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+  }
+
+  &__edit-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__edit-icon {
+    width: inherit;
+    height: inherit;
+  }
+}

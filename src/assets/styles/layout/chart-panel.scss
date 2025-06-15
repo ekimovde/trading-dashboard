@@ -1,0 +1,41 @@
+.layout-chart-panel {
+  //
+}
+
+.layout-chart-panel-tabs {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  column-gap: 5px;
+  padding-right: 24px;
+  padding-left: 24px;
+  background-color: #1f1f1f;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    padding: 10px 16px;
+  }
+
+  &__action {
+    padding: 8px;
+    width: fit-content;
+    line-height: 1;
+    cursor: pointer;
+    color: #999999;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: none;
+    white-space: nowrap;
+
+    &--is-active {
+      color: #00bddd;
+      border: 1px solid #2dcaff;
+    }
+  }
+}

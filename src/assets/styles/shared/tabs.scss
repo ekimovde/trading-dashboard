@@ -1,0 +1,27 @@
+.shared-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__action {
+    padding: 16px;
+    background-color: transparent;
+    border: none;
+    flex-grow: 1;
+    color: #999999;
+    border-bottom: 1px solid #999999;
+    cursor: pointer;
+    transition: 0.35s opacity;
+
+    &:hover:not(&--is-active) {
+      opacity: 0.8;
+    }
+
+    &--is-active {
+      color: #0fedbe;
+      border-bottom-width: 2px;
+      border-bottom-color: #0fedbe;
+      background-image: linear-gradient(to bottom, #0a0a0a, #09876c 95%, #0fedbe 70%);
+    }
+  }
+}

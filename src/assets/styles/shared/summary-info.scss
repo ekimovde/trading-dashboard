@@ -1,0 +1,25 @@
+.shared-summary-info {
+  display: flex;
+  flex-direction: column;
+  padding-right: 24px;
+  padding-left: 24px;
+  row-gap: 8px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__caption {
+    font-size: 14px;
+    line-height: 18px;
+    color: #999999;
+  }
+
+  &__value {
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+  }
+}

@@ -1,0 +1,159 @@
+<section class="layout-trade-panel" role="region" aria-label="Trading Panel">
+  <!-- Trade Card -->
+  <div class="layout-trade-panel__card layout-trade-panel-card">
+    <div class="layout-trade-panel-card__header">
+      <h2 class="layout-trade-panel-card__title">Trade</h2>
+
+      <button class="layout-trade-panel-card__action" aria-label="Filter trades">
+        <img
+          src="/src/assets/images/filter-icon.svg"
+          alt="Filter Icon"
+          class="layout-trade-panel-card__icon"
+        />
+      </button>
+    </div>
+
+    <div class="layout-trade-panel-card__content">
+      <!-- Tabs -->
+      <div id="trade-panel-tabs" role="tablist"></div>
+
+      <!-- Select: Order Type -->
+      <div class="layout-trade-panel-card__group">
+        <label for="trade-panel-select-order-type" class="layout-trade-panel-card__subtext">
+          Order Type
+        </label>
+
+        <div
+          id="trade-panel-select-order-type"
+          class="layout-trade-panel-card__field"
+          role="combobox"
+        ></div>
+      </div>
+
+      <!-- Select: Quantity -->
+      <div class="layout-trade-panel-card__group">
+        <div class="layout-trade-panel-card__group-inner">
+          <label for="trade-panel-input-quantity" class="layout-trade-panel-card__subtext">
+            Quantity
+          </label>
+
+          <div id="trade-panel-badge"></div>
+        </div>
+
+        <div
+          id="trade-panel-input-quantity"
+          class="layout-trade-panel-card__field"
+          role="spinbutton"
+        ></div>
+        <div
+          id="trade-panel-fast-buttons"
+          class="layout-trade-panel-card__field"
+          role="group"
+          aria-label="Quick quantity selection"
+        ></div>
+      </div>
+
+      <!-- Select: Time In Force -->
+      <div class="layout-trade-panel-card__group">
+        <label for="trade-panel-select-time-in-force" class="layout-trade-panel-card__subtext">
+          Time In Force
+        </label>
+
+        <div
+          id="trade-panel-select-time-in-force"
+          class="layout-trade-panel-card__field"
+          role="combobox"
+        ></div>
+      </div>
+
+      <!-- Stop Price -->
+      <div class="layout-trade-panel-card__group layout-trade-panel-card__group--is-alternative">
+        <!-- Switch -->
+        <div id="trade-panel-switch" role="switch"></div>
+
+        <!-- Select: Stop Price -->
+        <div
+          id="trade-panel-input-stop-price"
+          class="layout-trade-panel-card__field"
+          role="combobox"
+        ></div>
+
+        <div class="layout-trade-panel-card__est-loss">
+          <span class="layout-trade-panel-card__est-loss-caption"> Est. Loss: </span>
+
+          <span class="layout-trade-panel-card__est-loss-value"> 12,057.36 </span>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="layout-trade-panel-card__divider" role="separator"></div>
+
+      <!-- Summary Info -->
+      <div id="trade-panel-summary-info" role="region" aria-label="Trade Summary"></div>
+
+      <!-- Action and Link -->
+      <div class="layout-trade-panel-card__actions">
+        <div id="trade-panel-action"></div>
+
+        <div id="trade-panel-link"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Time & Sales Card -->
+  <div class="layout-trade-panel__card layout-trade-panel__card--is-short">
+    <div class="layout-trade-panel-card__header">
+      <h2 class="layout-trade-panel-card__title">Time & Sales</h2>
+
+      <button class="layout-trade-panel-card__action" aria-label="Filter time and sales">
+        <img
+          src="/src/assets/images/filter-icon.svg"
+          alt="Filter Icon"
+          class="layout-trade-panel-card__icon"
+        />
+      </button>
+    </div>
+
+    <ul class="layout-trade-panel-card__list" role="list">
+      <li class="layout-trade-panel-card__item" role="listitem">
+        <span class="layout-trade-panel-card__caption"> 16:59:32 </span>
+
+        <span class="layout-trade-panel-card__caption"> 420.56 </span>
+
+        <span class="layout-trade-panel-card__caption"> 25 </span>
+      </li>
+
+      <li class="layout-trade-panel-card__item" role="listitem">
+        <span class="layout-trade-panel-card__caption"> 16:59:32 </span>
+
+        <span class="layout-trade-panel-card__caption"> 420.56 </span>
+
+        <span class="layout-trade-panel-card__caption"> 25 </span>
+      </li>
+
+      <li class="layout-trade-panel-card__item" role="listitem">
+        <span class="layout-trade-panel-card__caption"> 16:59:32 </span>
+
+        <span class="layout-trade-panel-card__caption"> 420.56 </span>
+
+        <span class="layout-trade-panel-card__caption"> 25 </span>
+      </li>
+
+      <li class="layout-trade-panel-card__item" role="listitem">
+        <span class="layout-trade-panel-card__caption"> 16:59:32 </span>
+
+        <span class="layout-trade-panel-card__caption"> 420.56 </span>
+
+        <span class="layout-trade-panel-card__caption"> 25 </span>
+      </li>
+
+      <li class="layout-trade-panel-card__item" role="listitem">
+        <span class="layout-trade-panel-card__caption"> 16:59:32 </span>
+
+        <span class="layout-trade-panel-card__caption"> 420.56 </span>
+
+        <span class="layout-trade-panel-card__caption"> 25 </span>
+      </li>
+    </ul>
+  </div>
+</section>

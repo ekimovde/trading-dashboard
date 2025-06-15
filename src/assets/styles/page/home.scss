@@ -1,0 +1,19 @@
+.home-page {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr minmax(auto, 350px);
+    column-gap: 8px;
+    padding: 8px;
+  }
+}
